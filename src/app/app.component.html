@@ -1,2 +1,10 @@
-<app-product-list></app-product-list>
-<router-outlet />
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-button [routerLink]="['/products']">Products</button>
+        <button mat-button [routerLink]="['/cart']">Cart</button>  
+    </mat-toolbar-row>   
+</mat-toolbar>  
+<div class="container text-center">
+    <h1>Welcome to Awesome Painting Collection</h1>
+</div>
+<router-outlet/>
